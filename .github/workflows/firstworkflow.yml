@@ -1,0 +1,12 @@
+name: firstWorkflow
+on: workflow_dispatch
+jobs:
+    firstjob:
+        runs-on: ubuntu-latest
+        steps:
+            - name: print greetings
+              run: echo "hello world"
+            - name: print goodbye
+              run: |
+                echo "this is my first github action"
+                echo "workflow excecuted successfully"
